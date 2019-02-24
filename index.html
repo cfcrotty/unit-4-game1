@@ -18,15 +18,17 @@
 <body>
     <div class="jumbotron">
         <h1 class="text-center">Star Wars RPG Game</h1>
-        <h2 class="text-center"><button id="about" type="button" class="btn btn-success">About the Game</button></h2>
+        <h2 class="text-center"><button id="about" type="button" class="btn btn-secondary">About the Game</button></h2>
     </div>
     <div class="container">
         <div class="card mt-1">
             <div class="card-header">
                 <div class="card-body text-center">
                     <div class="row">
-                        <h3 class="card-title">Your Character</h3>
-                        <h2 id="message"></h2>
+                        <div class="col-md-12">
+                            <h3 class="card-title">Your Character</h3>
+                            <h2 id="message"></h2>
+                        </div>
                     </div>
                     <div id="row1" class="row">
                         <div id="divCharacter1" class="col-md-3">
@@ -60,7 +62,10 @@
                 <div class="card-header">
                     <div class="card-body text-center">
                         <div class="row">
-                            <h3 class="card-title">Enemies available to attack</h3>
+                            <div class="col-md-12">
+                                <h3 class="card-title">Enemies available to attack</h3>
+                                <h2 id="message1"></h2>
+                            </div>
                         </div>
                         <div id="row2" class="row"></div>
                     </div>
@@ -81,6 +86,12 @@
                                 <button id="restart" type="button" class="btn btn-primary" disabled>Restart</button>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="attackInfo1"></div>
+                                <div id="attackInfo2"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,7 +99,9 @@
                 <div class="card-header">
                     <div class="card-body text-center">
                         <div class="row">
-                            <h3 class="card-title">Defender</h3>
+                            <div class="col-md-12">
+                                <h3 class="card-title">Defender</h3>
+                            </div>
                         </div>
                         <div id="row4" class="row"></div>
                     </div>

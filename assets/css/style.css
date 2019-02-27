@@ -28,7 +28,7 @@ p {
     overflow: auto;
 }
 .fullImage {
-    height: 500px !important;
+    /*height: 500px !important;*/
     display: none;
     margin: 10%;
     width: 100%;

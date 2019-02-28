@@ -15,12 +15,12 @@ characters[3] = {cName:"Darth Sidious",hp:150,ap:4,cap:20,i:"assets/images/Sidio
 characters[4] = {cName:"Darth Maul",hp:180,ap:2,cap:25,i:"assets/images/Maul.jpeg"};
 //after the document is ready, load these
 $(document).ready(function () {
-    
-
+    //function to load different sound clips on different scenarios
     function loadSong(flag) {
         var audioToPlay = "assets/audio/LightsaberOn.mp3";
         if (flag==0) audioToPlay = "assets/audio/SadTrombone.mp3";
         else if (flag==1) audioToPlay = "assets/audio/Applause.mp3";
+        else if (flag==2) audioToPlay = "assets/audio/PowerUp.mp3";
         var audio = new Audio(audioToPlay);
         audio.play();
     }
@@ -45,6 +45,7 @@ $(document).ready(function () {
     //on click of each character, run codes inside the function
     $('#character1, #character2, #character3, #character4').click(function () {
         if (gameOver) return;
+        loadSong(2);
         if (defender && ($(this).val() == enemy1 || $(this).val() == enemy2)) {
             defender=$(this).val();
         }
